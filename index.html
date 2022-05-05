@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager Starter</title>
+  <!-- normalize -->
+  <link rel="stylesheet" href="./normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <form action="">
+    <h4>task manager</h4>
+    <div class="input-section">
+      <input type="text" name="Task" id="task" placeholder="e.g. wash dishes">
+      <button type="submit">submit</button>
+    </div>
+    <small class="text-small">there was an error</small>
+  </form>
+
+  <!-- task list section -->
+  <section class="section">
+    <p>loading...</p>
+    <div class="tasks">
+      <!-- single task -->
+      <div class="single-task task-1">
+        <h5>task name</h5>
+        <div class="task-action">
+          <a href="task.html">
+            <i class="fa-solid fa-edit"></i>
+          </a>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+      <!-- end of single task -->
+      <!-- single task -->
+      <div class="single-task task-compelete">
+        <h5>
+          <span><i class="fa-regular fa-circle-check"></i></span>
+          task name
+        </h5>
+        <div class="task-action">
+          <a href="task.html">
+            <i class="fa-solid fa-edit"></i>
+          </a> <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+      <!-- end of single task -->
+    </div>
+  </section>
+
+
+</body>
+
+</html>
